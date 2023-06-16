@@ -73,6 +73,28 @@ minetest.register_node("det_mod:detolite_ore", {
 minetest.register_node("det_mod:detolite_block", {
     description = "Detolite Block", 
     tiles = {"detolite_block.png"},
-    groups = {cracky = 3}
+    groups = {cracky = 3},
+    sounds = default.node_sound_stone_defaults()
+})
+
+minetest.register_node("det_mod:detolite_dust_block", {
+    description = "Block of Detolite Dust",
+    tiles = {"detolite_dust_block.png"},
+    groups = {crumbly = 2},
+    sounds = default.node_sound_gravel_defaults()
+})
+
+minetest.register_node("det_mod:adonite_coat_detolite_block", {
+    description = "Adonite Coated Detolite Block",
+    tiles = {"adonite_coat_detolite_block.png"},
+    groups = {cracky = 3},
+    sounds = default.node_sound_stone_defaults()
+})
+
+minetest.register_node("det_mod:detolite_crystal_growth", {
+    description = "Detolite Crystal Growth",
+    tiles = {"detolite_crystal_growth.png"},
+    groups = {cracky = 3, oddly_breakable_by_hand = 3},
+    sounds = default.node_sound_glass_defaults()
 })
 --BLOCKS
